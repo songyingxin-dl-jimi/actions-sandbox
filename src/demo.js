@@ -9,7 +9,8 @@ Demo.prototype.getMessage = function (val) {
             message = 'Hello GitHub Actions!';
             break;
         case 1:
-            message = 'This repository is sandbox for GitHub Actions.'
+            // message = 'This repository is sandbox for GitHub Actions.'
+            message = 'error case test!!'
             break;
         default:
             message = 'Not Define.'
