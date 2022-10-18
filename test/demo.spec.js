@@ -9,10 +9,10 @@ describe('demo.js', function () {
         it('returns demo Message.', ()=>{
             const demo = new Demo();
 
-            expect(demo.getMessage())
-            .to.be.equal('Hello GitHub Actions!');
-            expect(demo.getMessage())
-            .to.be.equal('This repository is sandbox for GitHub Actions.');
+            // CASE　期待バリュー：Hello GitHub Actions!
+            expect(demo.getMessage(0)).to.be.equal('Hello GitHub Actions!');
+            // CASE　期待バリュー：This repository is sandbox for GitHub Actions.
+            expect(demo.getMessage(1)).to.be.equal('This repository is sandbox for GitHub Actions.');
         })
     });
 });

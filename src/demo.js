@@ -2,9 +2,10 @@ const Demo = function () {
     this.calledCount = 0;
 };
 
-Demo.prototype.getMessage = function () {
+Demo.prototype.getMessage = function (val) {
     var message = 'Not Define.';
-    switch (this.calledCount) {
+    //switch (this.calledCount) {
+    switch (val) {
         case 0:
             message = 'Hello GitHub Actions!';
             break;
