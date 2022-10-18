@@ -4,7 +4,7 @@ const Demo = function () {
 
 Demo.prototype.getMessage = function (val) {
     var message = 'Not Define.';
-    //switch (this.calledCount) {
+
     switch (val) {
         case 0:
             message = 'Hello GitHub Actions!';
