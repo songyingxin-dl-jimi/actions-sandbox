@@ -1,9 +1,8 @@
 const Demo = function () {
-    this.calledCount = 0;
 };
 
 Demo.prototype.getMessage = function (val) {
-    var message = 'Not Define.';
+    var message = '';
 
     switch (val) {
         case 0:
@@ -11,11 +10,11 @@ Demo.prototype.getMessage = function (val) {
             break;
         case 1:
             message = 'This repository is sandbox for GitHub Actions.'
-    
+            break;
         default:
+            message = 'Not Define.'
             break;
     }
-    this.calledCount++;
 
     return message;
 }
