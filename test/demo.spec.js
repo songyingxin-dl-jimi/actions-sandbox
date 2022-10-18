@@ -13,6 +13,8 @@ describe('demo.js', function () {
             expect(demo.getMessage(0)).to.be.equal('Hello GitHub Actions!');
             // CASE　期待バリュー：This repository is sandbox for GitHub Actions.
             expect(demo.getMessage(1)).to.be.equal('This repository is sandbox for GitHub Actions.');
+            // CASE　期待バリュー：Not Define.
+            expect(demo.getMessage(2)).to.be.equal('Not Define.');
         })
     });
 });
